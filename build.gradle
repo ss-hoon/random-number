@@ -38,6 +38,14 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+tasks.withType(Jar) {
+	// 출력 경로 설정
+	destinationDirectory.set(file("$buildDir/libs"))
+	// 아티팩트 이름 설정
+	archiveBaseName.set('random-number')
+	archiveVersion.set('0.0.1')
+}
+
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
