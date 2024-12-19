@@ -4,3 +4,6 @@ jdk:
 before_install:
   - sdk install java 21.0.4-open
   - sdk use java 21.0.4-open
+
+install:
+  - ./gradlew clean build
