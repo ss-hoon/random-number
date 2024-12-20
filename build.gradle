@@ -6,7 +6,7 @@ plugins {
 	id 'java-library'
 }
 
-group = 'com.shlee'
+group = 'com.github.ss-hoon'
 version = '0.0.1'
 
 java {
