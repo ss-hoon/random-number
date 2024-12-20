@@ -1,9 +1,6 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.4.0'
-	id 'io.spring.dependency-management' version '1.1.6'
 	id 'maven-publish'
-	id 'java-library'
 }
 
 group = 'com.github.ss-hoon'
@@ -13,6 +10,9 @@ java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(21)
 	}
+
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
 }
 
 configurations {
@@ -23,7 +23,6 @@ configurations {
 
 repositories {
 	mavenCentral()
-	maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -38,18 +37,17 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-tasks.withType(Jar) {
-	// 출력 경로 설정
-	destinationDirectory.set(file("$buildDir/libs"))
-	// 아티팩트 이름 설정
-	archiveBaseName.set('random-number')
-	archiveVersion.set('0.0.1')
-}
-
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
 			from components.java // Java 컴포넌트의 빌드 결과물을 포함
+		}
+	}
+
+	repositories {
+		maven {
+			name = "JitPack"
+			url = uri("https://jitpack.io")
 		}
 	}
 }
