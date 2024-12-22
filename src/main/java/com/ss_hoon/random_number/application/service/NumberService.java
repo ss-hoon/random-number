@@ -1,6 +1,6 @@
-package com.sshoon.random_number.application.service;
+package com.ss_hoon.random_number.application.service;
 
-import com.sshoon.random_number.domain.model.DataType;
+import com.ss_hoon.random_number.domain.model.DataType;
 
 public class NumberService {
 

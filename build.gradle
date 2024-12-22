@@ -1,25 +1,14 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.4.0'
-	id 'io.spring.dependency-management' version '1.1.6'
 	id 'maven-publish'
 }
 
-group = 'com.github.sshoon'
-version = '1.0.0'
+group 'com.github.ss_hoon'
+version '1.0.0'
 
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(21)
-	}
-
-	sourceCompatibility = JavaVersion.VERSION_21
-	targetCompatibility = JavaVersion.VERSION_21
-}
-
-configurations {
-	compileOnly {
-		extendsFrom annotationProcessor
 	}
 }
 
@@ -28,15 +17,10 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.apache.commons:commons-lang3:3.17.0'
 
-	testImplementation platform('org.junit:junit-bom:5.9.1')
-	testImplementation 'org.junit.jupiter:junit-jupiter'
-}
-
-test {
-	useJUnitPlatform()
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
 publishing {
@@ -52,4 +36,8 @@ publishing {
 			url = uri("https://jitpack.io")
 		}
 	}
+}
+
+test {
+	useJUnitPlatform()
 }
