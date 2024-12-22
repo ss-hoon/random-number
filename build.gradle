@@ -5,7 +5,7 @@ plugins {
 	id 'maven-publish'
 }
 
-group = 'com.github.ss-hoon'
+group = 'com.github.sshoon'
 version = '1.0.0'
 
 java {
@@ -31,7 +31,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.apache.commons:commons-lang3:3.17.0'
 
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	testImplementation platform('org.junit:junit-bom:5.9.1')
+	testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
 test {

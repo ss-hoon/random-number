@@ -1,4 +1,4 @@
-package com.shlee.random_number.domain.model;
+package com.sshoon.random_number.domain.model;
 
 import org.apache.commons.lang3.RandomUtils;
 

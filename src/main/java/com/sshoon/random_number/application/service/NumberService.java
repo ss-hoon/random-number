@@ -1,6 +1,6 @@
-package com.shlee.random_number.application.service;
+package com.sshoon.random_number.application.service;
 
-import com.shlee.random_number.domain.model.DataType;
+import com.sshoon.random_number.domain.model.DataType;
 
 public class NumberService {
 

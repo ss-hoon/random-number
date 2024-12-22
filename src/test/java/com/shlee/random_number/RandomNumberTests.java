@@ -1,10 +1,13 @@
 package com.shlee.random_number;
 
-import static com.shlee.random_number.domain.model.DataType.*;
+import static com.sshoon.random_number.domain.model.DataType.DOUBLE;
+import static com.sshoon.random_number.domain.model.DataType.FLOAT;
+import static com.sshoon.random_number.domain.model.DataType.INT;
+import static com.sshoon.random_number.domain.model.DataType.LONG;
 
 import org.junit.jupiter.api.Test;
 
-import com.shlee.random_number.application.service.NumberService;
+import com.sshoon.random_number.application.service.NumberService;
 
 public class RandomNumberTests {
 

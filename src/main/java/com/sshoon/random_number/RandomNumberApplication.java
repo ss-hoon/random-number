@@ -1,4 +1,4 @@
-package com.shlee.random_number;
+package com.sshoon.random_number;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
