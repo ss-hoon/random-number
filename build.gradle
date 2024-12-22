@@ -9,8 +9,9 @@ group = 'com.github.ss-hoon'
 version = '0.0.1'
 
 java {
-	sourceCompatibility = JavaVersion.VERSION_21
-	targetCompatibility = JavaVersion.VERSION_21
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
 }
 
 configurations {
@@ -36,18 +37,14 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-tasks.withType(Jar) {
-	// 출력 경로 설정
-	destinationDirectory.set(file("$buildDir/libs"))
-	// 아티팩트 이름 설정
-	archiveBaseName.set('random-number')
-	archiveVersion.set('0.0.1')
-}
-
 publishing {
 	publications {
-		mavenJava(MavenPublication) {
-			from components.java // Java 컴포넌트의 빌드 결과물을 포함
+		maven(MavenPublication) {
+			groupId 'com.github.ss-hoon'
+			artifactId 'random-number'
+			version '0.0.1'
+
+			from components.java
 		}
 	}
 
