@@ -14,7 +14,7 @@
     }
     
     dependencies {
-        implementation 'com.github.ss-hoon:random-number:1.0.1'
+        implementation 'com.github.ss-hoon:random-number:1.0.2'
     }
   ```
   
@@ -30,7 +30,7 @@
     <dependency>
         <groupId>com.github.ss-hoon</groupId>
         <artifactId>random-number</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </dependency>
   ```
 
@@ -49,9 +49,6 @@
     // 1. 원하는 타입을 세팅한다.
     DataType dataType = DataType.INT; // LONG, FLOAT, DOUBLE
 
-    // 2. 서비스를 생성한다.
-    RandomService randomService = new RandomService();
-
-    // 3. 난수 생성 메서드를 호출한다.
-    randomService.getRandomNumber(dataType);
+    // 2. 난수 생성 메서드를 호출한다.
+    RandomService.getRandomNumber(dataType);
   ```
