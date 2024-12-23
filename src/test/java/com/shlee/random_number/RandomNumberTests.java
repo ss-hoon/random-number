@@ -11,25 +11,23 @@ import com.ss_hoon.random_number.application.service.NumberService;
 
 public class RandomNumberTests {
 
-	private final NumberService numberService = new NumberService();
-
 	@Test
 	public void getRandomInteger() {
-		System.out.println(numberService.getRandomNumber(INT));
+		System.out.println(NumberService.getRandomNumber(INT));
 	}
 
 	@Test
 	public void getRandomDouble() {
-		System.out.println(numberService.getRandomNumber(DOUBLE));
+		System.out.println(NumberService.getRandomNumber(DOUBLE));
 	}
 
 	@Test
 	public void getRandomFloat() {
-		System.out.println(numberService.getRandomNumber(FLOAT));
+		System.out.println(NumberService.getRandomNumber(FLOAT));
 	}
 
 	@Test
 	public void getRandomLong() {
-		System.out.println(numberService.getRandomNumber(LONG));
+		System.out.println(NumberService.getRandomNumber(LONG));
 	}
 }
