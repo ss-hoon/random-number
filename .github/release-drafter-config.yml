@@ -18,13 +18,13 @@ no-changes-template: '변경사항이 없어요'
 version-resolver:
   major:
     labels:
-      - 'major'
+      - '✨ major'
   minor:
     labels:
-      - 'minor'
+      - '✨ minor'
   patch:
     labels:
-      - 'patch'
+      - '✨ patch'
   default: patch
   
 template: |
