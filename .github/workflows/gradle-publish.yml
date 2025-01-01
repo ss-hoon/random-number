@@ -6,8 +6,7 @@ on:
       - master
 
 jobs:
-  setup-build-deploy:
-    name: Setup, Build, and Deploy
+  build:
     runs-on: ubuntu-latest
 
     steps:
