@@ -14,7 +14,7 @@
     }
     
     dependencies {
-        implementation 'com.github.ss-hoon:random-number:1.0.2'
+        implementation 'com.github.ss-hoon:random-number:1.0.3'
     }
   ```
   
@@ -30,7 +30,7 @@
     <dependency>
         <groupId>com.github.ss-hoon</groupId>
         <artifactId>random-number</artifactId>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
     </dependency>
   ```
 
