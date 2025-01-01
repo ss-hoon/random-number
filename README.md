@@ -1,7 +1,7 @@
 ## 난수 생성기
 
 ### 🔔 Discription
-* 원하는 타입에 맞는 정수나 소수를 랜덤하게 생성하여 반환합니다.
+* Randomly generate and return an number that matches the desired type.
 
 <br>
 
@@ -46,9 +46,9 @@
 
 ### ✏️ Usage
   ```java
-    // 1. 원하는 타입을 세팅한다.
+    // 1. Set the desired type
     DataType dataType = DataType.INT; // LONG, FLOAT, DOUBLE
 
-    // 2. 난수 생성 메서드를 호출한다.
+    // 2. Invoke a random number generation method.
     RandomService.getRandomNumber(dataType);
   ```
